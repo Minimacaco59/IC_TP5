@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/EdgarVERMECH/gilded.git'
+                git 'https://github.com/Minimacaco59/IC_TP5.git'
                 
                 sh 'npm install'
                 sh 'npm run build'
