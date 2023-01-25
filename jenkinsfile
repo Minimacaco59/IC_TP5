@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                git 'https://github.com/EdgarVERMECH/gilded.git'
+                
+                sh 'npm install'
+                sh 'npm run build'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'npm test'
+            }
+        }
+        stage('Packaging') {
+            steps {
+                sh 'npm pack'
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "name" : "genericItem",
+        "sellIn" : 12,
+        "quality" : 3,
+        "value" : 10,
+        "type" : "genericItem"
+    }
+]
